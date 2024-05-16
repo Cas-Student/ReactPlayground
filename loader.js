@@ -1,3 +1,5 @@
+var elements = {};
+
 //Document
 document.title = "Cas's Javascript Website"
 
@@ -5,9 +7,12 @@ document.title = "Cas's Javascript Website"
 const mainDiv = document.createElement("div");
 mainDiv.id = "main";
 document.body.appendChild(mainDiv);
+elements.push("main",mainDiv.id);
 
 const Title = document.createElement("div");
 Title.id = "title";
 Title.innerHTML = "My Cool Website";
 
 mainDiv.appendChild(Title);
+
+alert(elements);
