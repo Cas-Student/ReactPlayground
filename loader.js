@@ -10,7 +10,7 @@ document.body.appendChild(mainDiv);
 elements.push("main",mainDiv.id);
 
 const Title = document.createElement("div");
-Title.id = "title";
+Title.class = "title";
 Title.innerHTML = "My Cool Website";
 
 mainDiv.appendChild(Title);

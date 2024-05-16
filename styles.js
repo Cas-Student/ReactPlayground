@@ -1,0 +1,1 @@
+document.getElementsByClassName("title").innerHTML = "Javascript Website";
