@@ -5,7 +5,15 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div id="R"></div>
+  </body>
   <script src="loader.js" type="text/javascript"></script>
   <script src="styles.js" type="text/javascript"></script>
+  <script type="text/babel">
+    function f() {return "My React Element";}
+    const c = document.getElementById("R");
+    const r = ReactDOM.createRoot(c);
+    r.render("<f() />");
+  </script>
 </html>
