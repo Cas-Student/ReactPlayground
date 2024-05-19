@@ -8,9 +8,9 @@ const mainDiv = document.createElement("div");
 mainDiv.id = "main";
 document.body.appendChild(mainDiv);
 
-const title = document.createElement("div");
-title.class = "title";
-title.innerHTML = "My Cool Website";
+const header = document.createElement("div");
+header.class = "header";
+header.innerHTML = "My Cool Website";
 
 //Adds the title to the webpage.
-mainDiv.appendChild(Title);
+mainDiv.appendChild(header);
